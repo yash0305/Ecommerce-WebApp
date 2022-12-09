@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>Shop pro</title>
 
   <style>
     nav{
@@ -31,10 +31,10 @@
   <!-- navbar -->
 
   <nav class="one-edge-shadow 
-  sticky-top navbar 
+  sticky-top
   navbar-expand-lg
-   navbar-light bg-white">
-    <a class="navbar-brand" href="/">E-Shop</a>
+  navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"><i>Shop pro<i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,6 +63,7 @@
         <li class="nav-item ">
           <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
         </li>
+
         {% else %}
        
         <li class="nav-item ">
@@ -71,6 +72,11 @@
         <li class="nav-item ">
           <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
         </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="">About Us<span class="sr-only">(current)</span></a>
+        </li>
+
         {% endif %}
 
 
@@ -83,7 +89,6 @@
 
 
     {% block content %}{% endblock %}
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

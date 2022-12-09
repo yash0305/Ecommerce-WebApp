@@ -5,16 +5,16 @@
 {% load cart %}
 {% load custom_filter %}
 <!-- body -->
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-3" style = "background-color:#f2f2f2">
 	<div class="row">
 
 
 		<!-- filter -->
 
 		<div class="col-lg-3 mx-auto">
-			<div class="list-group">
+			<div class="list-group border border-dark" style="">
 
-				<a href="/" class="list-group-item list-group-item-action">All Products</a>
+				<a href="/" class="list-group-item list-group-item-action alert-primary">All Products</a>
 
 				{% for category in categories %}
 				<a href="/?category={{category.id}}"
